@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTGeats</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+</head>
+<body>    
+<main class="food-delivery">
+  <section class="hero-section">
+    <header class="header">
+      <div class="header-container">
+        <h1 class="brand-name">JTGeats</h1>
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/akar-icons_search.svg" alt="User profile icon" class="profile-icon" />
+        <div class="cart-icon" onclick="openModal()">
+        <img src="images/akar-icons_shopping-bag.svg" alt="User profile icon" class="icon" />
+        </div>
+        
+      </div>
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <div class="cartx-icon">
+            <img src="images/akar-icons_shopping-bag2.svg" alt="Empty Cart">
+          </div>
+            <h2 class="cart-empty">Cart is Empty</h2>
+            <p class="cart-display-text">Add some items to the cart to checkout</p>
+            <button class="close-btn" onclick="closeModal()">Back to Menu</button>
+        </div>
+      </div>
+    </header>
+
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2 class="hero-title">Authentic Home food in India</h2>
+        <p class="hero-description">JTGeats is a courier service in which authentic home cook food is delivered to a customer.</p>
+        
+        <form class="search-form" role="search">
+          <label for="foodSearch" class="visually-hidden">Search for food</label>
+          <input type="search" id="foodSearch" class="search-input" placeholder="Search food you love" />
+          <button type="submit" class="search-button">Search</button>
+        </form>
+      </div>
+      
+      <img src="images/hero-image.svg" alt="Delicious home-cooked meal presentation" class="hero-image" />
+    </div>
+  </section>
+
+  <section class="kitchen-section">
+    <div style="color: black; font-size: 40px; font-family: Roboto; font-weight: 800; line-height: 24px; padding-left:0px; text-align: justify; word-wrap: break-word">Home Kitchen</div>
+    <div class="grid-container">
+      <!-- Pizza Card (Repeat this block for each item) -->
+      <div class="card">
+          <div class="image-container">
+              <span class="discount">50%</span>
+              <img src="images/unsplash_MqT0asuoIcU.png" alt="Pizza">
+          </div>
+          <div class="details">
+              <div class="title">Home made pizza</div>
+              <div class="price">₹190</div>
+          </div>
+          <div class="info">
+              <div class="badges">
+                  <div class="badge">
+                      <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+                  </div>
+                  <div class="badge">50-79 min</div>
+              </div>
+              <div class="plus-icon">
+                  <img src="images/iconoir_add-to-cart.svg" alt="Add">
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="image-container">
+            <img src="images/unsplash_UxRhrU8fPHQ.png" alt="Pizza">
+        </div>
+        <div class="details">
+            <div class="title">Home made pizza</div>
+            <div class="price">₹190</div>
+        </div>
+        <div class="info">
+            <div class="badges">
+                <div class="badge">
+                    <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+                </div>
+                <div class="badge">50-79 min</div>
+            </div>
+            <div class="plus-icon">
+                <img src="images/iconoir_add-to-cart.svg" alt="Add">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="image-container">
+          <span class="discount">20%</span>
+          <img src="images/unsplash_CbNAuxSZTFo.png" alt="Pizza">
+      </div>
+      <div class="details">
+          <div class="title">Home made pizza</div>
+          <div class="price">₹190</div>
+      </div>
+      <div class="info">
+          <div class="badges">
+              <div class="badge">
+                  <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+              </div>
+              <div class="badge">50-79 min</div>
+          </div>
+          <div class="plus-icon">
+              <img src="images/iconoir_add-to-cart.svg" alt="Add">
+          </div>
+      </div>
+  </div>
+
+  <div class="card">
+    <div class="image-container">
+        <img src="images/unsplash_Y6OgisiGBjM.png" alt="Pizza">
+    </div>
+    <div class="details">
+        <div class="title">Home made pizza</div>
+        <div class="price">₹190</div>
+    </div>
+    <div class="info">
+        <div class="badges">
+            <div class="badge">
+                <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+            </div>
+            <div class="badge">50-79 min</div>
+        </div>
+        <div class="plus-icon">
+            <img src="images/iconoir_add-to-cart.svg" alt="Add">
+        </div>
+    </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <span class="discount">50%</span>
+      <img src="images/unsplash_nP11TkjxJ7s.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">₹190</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <img src="images/unsplash_60nzTP7_hMQ.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">₹190</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <span class="discount">20%</span>
+      <img src="images/unsplash_sejqj6Eaqe8.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">₹190</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <span class="discount">50%</span>
+      <img src="images/unsplash_33GPuoFI7v8.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">₹190</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <span class="discount">50%</span>
+      <img src="images/unsplash_MqT0asuoIcU.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">$19</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <img src="images/unsplash_UxRhrU8fPHQ.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">₹190</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <span class="discount">20%</span>
+      <img src="images/unsplash_CbNAuxSZTFo.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">₹190</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-container">
+      <img src="images/unsplash_Y6OgisiGBjM.png" alt="Pizza">
+  </div>
+  <div class="details">
+      <div class="title">Home made pizza</div>
+      <div class="price">₹190</div>
+  </div>
+  <div class="info">
+      <div class="badges">
+          <div class="badge">
+              <img src="images/ant-design_star-filled.svg" alt="Star"> 4.7
+          </div>
+          <div class="badge">50-79 min</div>
+      </div>
+      <div class="plus-icon">
+          <img src="images/iconoir_add-to-cart.svg" alt="Add">
+      </div>
+  </div>
+</div>
+   
+  </div>
+</section>
+<section class="popular-section" aria-label="Popular Items">
+  <div class="popular-items">Popular Items</div>
+ <div class="carousel-wrap">
+  <img src="images/Arrow.svg" id="backbtn">
+  <div class="carousel">
+    <div>
+      <span><img src="images/popular-card.jpg"></span>
+      <span><img src="images/popular-card2.jpg"></span>
+      <span><img src="images/popular-card3.jpg"></span>
+    </div>
+    <div>
+      <span><img src="images/popular-card.jpg"></span>
+      <span><img src="images/popular-card4.jpg"></span>
+      <span><img src="images/popular-card2.jpg"></span>
+    </div>
+  </div>
+  <img src="images/Arrow2.svg" id="nextbtn">
+ </div>
+
+  <div class="request-dish-section">
+    <button id="requestdishbtn" class="request-dish-button">Request a Dish</button>
+</div>
+</section>
+
+<!-- Modal2 -->
+<div id="requestDishModal2" class="modal2">
+    <div class="modal2-content">
+        <p class="req-heading">Request a Dish</p>
+         <label for="nameInput" class="name-label">Name*</label>
+        <input type="text" placeholder="Enter name of the dish">
+        <label for="nameInput" class="name-label">Upload an image</label>
+        <input type="text" placeholder="Paste an image URL">
+
+        <div class="modal2-buttons">
+            <button id="cancelBtn" class="cancel-btn">Cancel</button>
+            <button id="submitBtn" class="submit-btn">Submit Request</button>
+        </div>
+    </div>
+</div>
+
+
+  
+  </section>
+ 
+    <div class="service-container">
+    <div class="service-text">
+        <h1>We are providing best <br> home cooked food delivery service.</h1>
+        <p>Away from home and craving the tasty homemade recipes? <br>
+        Choose from a selection of our delicious home cooked dishes.</p>
+    </div>
+  <section class="image-wrapper">
+    <div class="video-container">
+        <video id="promoVideo" src="images/856399-hd_1920_1080_25fps.mp4" poster="images/poster-image.png" autoplay muted playsinline></video>
+        <button id="playPauseBtn">
+            <img id="playIcon" src="images/Arrowx.svg" alt="Play">
+        </button>
+    </div>
+  </section>
+    <div class="green-section"></div>
+</div>
+
+  <div class="main-container">
+    <section class="contact-us-section">
+      <div class="content-wrapper">
+        <form class="form-wrapper">
+          <div class="text-block">
+            <div class="question-text">Do you have a question<br> or want to become a seller?</div>
+            <div class="instruction-text">Fill this form and our manager will contact you next 48 hours.</div>
+          </div>
+          <div class="input-group">
+            <label for="nameInput" class="visually-hidden">Your Name</label>
+            <input class="search-input" type="text" id="nameInput" placeholder="Your Name" aria-label="Your Name">
+            <label for="emailInput" class="visually-hidden">Your e-mail</label>
+            <input class="search-input" type="email" id="emailInput" placeholder="Your e-mail" aria-label="Your e-mail">
+          </div>
+          <label for="messageInput" class="visually-hidden">Your message</label>
+          <textarea class="large-input" id="messageInput" placeholder="Your message" aria-label="Your message"></textarea>
+        </form>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e6ba1d312363e4e12bcde8f620383f071e8719788d30ee398aa337b78753bb4?placeholderIfAbsent=true&apiKey=9d7f9b7c2ebe4cd995968d76b2c85aa9" alt="Decorative image illustrating contact us concept" class="image">
+      </div>
+    </section>
+    <button class="submit-button" tabindex="0" type="submit">Submit</button>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <h2 class="brand-name">JTGeats</h2>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="footer-actions">
+          <button class="profile-btn" aria-label="View profile">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5f0715be68ec812b218444bb2d5bf2a74aabd5e078d26dba790f4934f79d653?placeholderIfAbsent=true&apiKey=9d7f9b7c2ebe4cd995968d76b2c85aa9" alt="" />
+          </button>
+          <button class="cart-btn" aria-label="View cart">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1331b70b35ef9999aba13f5f53bb5d82268c9bd6ee085997230799bc7098fb28?placeholderIfAbsent=true&apiKey=9d7f9b7c2ebe4cd995968d76b2c85aa9" alt="" />
+          </button>
+        </div>
+      </div>
+      
+      <div class="footer-divider">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2f4acdb3ee2b10c2f1d33762d336bf3398bab6d5e7ea43f45281b44af5259621?placeholderIfAbsent=true&apiKey=9d7f9b7c2ebe4cd995968d76b2c85aa9" alt="" />
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
+
+</html>
