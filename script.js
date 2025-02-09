@@ -3,12 +3,10 @@ function openModal() {
     document.getElementById("cartModal").style.display = "flex";
     document.body.style.overflow = "hidden"; // Disable scrolling
 }
-
 function closeModal() {
     document.getElementById("cartModal").style.display = "none";
     document.body.style.overflow = "auto"; // Re-enable scrolling
 }
-
 // Modal 2: Request Dish Modal
 document.addEventListener("DOMContentLoaded", function () {
     const requestdishbtn = document.getElementById("requestdishbtn");
@@ -110,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         video.play();
     });
 });
+
 
 
 
