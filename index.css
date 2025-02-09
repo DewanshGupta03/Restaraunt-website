@@ -1609,13 +1609,22 @@ video {
       flex-direction: row; /* Keep links horizontally aligned */
       gap: 10px; /* Reduce gap between links */
       flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
-      justify-content: center; /* Center-align links */
+      justify-content: center; 
+      margin-top: -10px;
+    }
+    .brand{
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+      margin-top:30px;
+      margin-left:-175px;
     }
     .footer-links a {
         font-size: 14px; /* Smaller font size for mobile */
     }
     .footer-actions {
         gap: 8px; /* Reduce gap between buttons */
+        margin-left:370px;
     }
     .footer-divider {
         margin-top: 15px; /* Adjust margin */
